@@ -1,4 +1,4 @@
-package xyberty.java.stacks;
+//package xyberty.stacks;
 
 /**
  *	Этот класс расширяет (наследуется от) AbstractStack,

@@ -1,8 +1,8 @@
 // Соглашение об именовании пакетов
 //package xyberty.java.stacks;
 
-package test;
-import xyberty.java.stacks.*;
+//package xyberty.stacks;
+//import xyberty.stacks.*;
 
 public class StackTest {
 	public static void fill(Stack<String> stack) {

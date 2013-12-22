@@ -1,4 +1,4 @@
-package xyberty.java.stacks;
+//package xyberty.stacks;
 
 public class ArrayStack<E> extends AbstractStack<E> implements Stack<E> {
 	private E[] elements;
