@@ -1,11 +1,25 @@
+// Соглашение об именовании пакетов
+//package xyberty.java.stacks;
+
+package test;
+import xyberty.java.stacks.*;
+
 public class StackTest {
-	public static void fill(Stack stack) {
+	public static void fill(Stack<String> stack) {
 		for (int i = 0; i < 5; i++) {
-			stack.push(2 * i);
+			stack.push("i" + i);
 		}
 	}
 
-	public static void dump(Stack stack) {
+	// Обычный метод
+	// public static void dump(Stack stack) {
+	// 	System.out.println(stack.size());	
+	// 	while (stack.size() != 0) {
+	// 		System.out.println(stack.peek() + " " + stack.pop());
+	// 	}
+	// }
+	// Generic-метод
+	public static <E> void dump(Stack<E> stack) {
 		System.out.println(stack.size());	
 		while (stack.size() != 0) {
 			System.out.println(stack.peek() + " " + stack.pop());
@@ -14,12 +28,12 @@ public class StackTest {
 
 	public static void main(String[] args) {
 		{
-			LinkedStack stack = new LinkedStack();
+			LinkedStack<String> stack = new LinkedStack<String>();
 			fill(stack);
 			dump(stack);
 		}
 		{
-			ArrayStack stack = new ArrayStack(10);
+			ArrayStack<String> stack = new ArrayStack<String>(10);
 			fill(stack);
 			dump(stack);
 		}

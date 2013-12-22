@@ -1,3 +1,5 @@
+package xyberty.java.stacks;
+
 /**
  *	Этот класс расширяет (наследуется от) AbstractStack,
  *	описывая его метод popS() и метод peek() из интерфейса Stack.

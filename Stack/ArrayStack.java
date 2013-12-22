@@ -1,3 +1,5 @@
+package xyberty.java.stacks;
+
 public class ArrayStack<E> extends AbstractStack<E> implements Stack<E> {
 	private E[] elements;
 	public static final int AAA_BBB;	// Это константа!
@@ -21,7 +23,7 @@ public class ArrayStack<E> extends AbstractStack<E> implements Stack<E> {
 		if (elements.length >= capacity) {
 			return;
 		}
-		E[] newElements = (E[]) new Object[capacity * 2];
+		E[] newElements = (E[]) new Object[capacity * 2];	// приведение типов Object -> E
 		for (int i = 0; i < size; i++) {
 			newElements[i] = elements[i];
 		}
